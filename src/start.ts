@@ -1,9 +1,11 @@
-import { createDatabaseConnection } from './entities/db';
+import { DB } from './config/db';
+import { connectionOptions } from './config/connectionOptions';
 
 async function init() {
   try {
-    await createDatabaseConnection();
-    console.log('DB connected!')
+    const db = new DB(connectionOptions);
+    await db.createDatabaseConnection();
+    console.log('DB connected!');
   } catch (e) {
     console.error('DB connection Error: ', e);
   }
