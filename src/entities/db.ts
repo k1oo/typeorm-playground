@@ -1,5 +1,5 @@
 import { ConnectionOptions, createConnection } from 'typeorm';
-import { ENV } from '../env';
+import { ENV } from '../../env';
 
 const connectionOptions: ConnectionOptions = {
   entities: [
