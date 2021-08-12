@@ -1,0 +1,15 @@
+{
+  "name": "typeorm-playground",
+  "version": "1.0.0",
+  "main": "start.ts",
+  "repository": "https://github.com/k1oo/typeorm-playground.git",
+  "author": "k1oo <kbaek1202@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typeorm": "^0.2.36",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "ts-node": "^10.2.0"
+  }
+}
